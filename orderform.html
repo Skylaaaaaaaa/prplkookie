@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .form-control {
+      margin-bottom: 15px;
+    }
+
+    .form-check-label {
+      margin-left: 5px;
+    }
+
+    .btn-primary {
+      display: block;
+      width: 100%;
+    }
+  </style>
+  <script>
+    function showAlert() {
+      alert("Ordered successfully!");
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+   
+    <h1>Order Form</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="product">Product:</label>
+        <select class="form-control" id="product">
+          <option value="">Select a product</option>
+          <option value="product1">TWICE - TASTE OF LOVE    PHP680.00 </option>
+          <option value="product2">SEVENTEEN - YOUR CHOICE   PHP705.00 </option>
+          <option value="product3">NCT DREAM - HELLO FUTURE   PHP720.00</option>
+          <option value="product3">BOMB - MOTS SE   PHP2,500.00</option>
+          <option value="product3">BAMBAM - riBBon   PHP550.00</option>
+          
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" class="form-control" id="quantity" placeholder="Enter the quantity">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="terms">
+        <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+      </div>
+      <button onclick="showAlert()" type="submit" class="btn btn-primary">Place Order</button>
+    </form>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
